@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>更新</title>
+  <link href="../static/css/home.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="con">
+  <div style="position: fixed; top: 0px;right: 0px; font-size: 30px;"> </div>
+  <h1>更新宠物就诊信息</h1>
+
+  <header>
+    <div class="logo">
+      <a href=""><img src="../static/img/宠物.jpg" width="1010"></a>
+    </div>
+  </header>
+  <div class="input">
+    <form action="update1" method="post">
+      <ul>
+        <li>宠物名称：<input type="text" name="name"></li>
+        <li>宠物类型：<input type="text" name="type"></li>
+        <li>症状：<input type="text" name="symptom"></li>
+        <li>诊断结果：<input type="text" name="result"></li>
+        <li>处方：<input type="text" name="other"></li>
+        <span id="msg" th:utext="${msg}"></span>
+      </ul>
+      <input type="submit" value="更新">
+      <!--      <input type="reset" value="重置">-->
+    </form>
+    <nav>
+      <ul>
+        <a href="/home"><button>返回宠物系统</button></a>
+        <a href="/add"><button>增加宠物信息</button></a>
+        <a href="/select"><button>查询宠物信息</button></a>
+        <a href="/delete"><button>删除宠物信息</button></a>
+      </ul>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

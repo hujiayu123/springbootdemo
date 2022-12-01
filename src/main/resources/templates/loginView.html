@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/css/login.css"  type="text/css"/>
+</head>
+<body>
+<div class="bigBox">
+    <center>
+        <h2>宠物医院登录界面</h2>
+        <form action="/login" method="post" role="form" class="inputBox">
+            用户名称: <input type="text" id="name" name="name"></br>
+            用户密码: <input type="password" id="password" name="password"></br>
+            <span th:utext="${msg}" id="msg"></span></br>
+            <input type="submit" id="login" value="点击登录">
+            <!--        <input type="reset" value="重置">-->
+        </form>
+    </center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>添加宠物信息</title>
+  <link href="../static/css/home.css" rel="stylesheet">
+</head>
+<body>
+<div class="con">
+  <div style="position: fixed; top: 0px;right: 0px; font-size: 30px;"> </div>
+  <h1>增加宠物就诊信息</h1>
+
+  <header>
+    <div class="logo">
+      <a href=""><img src="../static/img/宠物.jpg" width="1010"></a>
+    </div>
+  </header>
+  <div class="input">
+    <form action="/add1" method="post">
+      宠物名称：<input type="text" id="name" name="name"><br>
+      宠物类型：<input type="text" id="type" name="type"><br>
+      症状：<input type="text" id="symptom" name="symptom"><br>
+      就诊结果：<input type="text" id="result" name="result"><br>
+      备注：<input type="text" id="other" name="other"><br>
+      就诊时间：<input type="text" id="date" name="date"><br>
+      <span id="msg" th:utext="${msg}"></span><br>
+      <input type="submit" value="添加">
+      <!--            <input type="reset" value="重置"><br>-->
+    </form>
+    <nav>
+      <ul>
+        <a href="/home"><button>返回宠物系统</button></a>
+        <a href="/update"><button>更新宠物信息</button></a>
+        <a href="/select"><button>查询宠物信息</button></a>
+        <a href="/delete"><button>删除宠物信息</button></a>
+      </ul>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{  margin:0; padding:0; font-family:Microsoft YaHei;}
+img{ border:none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.center{ text-align:center;}
+img{-moz-border-radius:15px;border-radius:15px; }
+h1{
+    font-size:35px;
+    line-height:40px;
+    margin:10px auto;
+    color:black;
+    font-weight:bold;
+    text-align:center;
+    border-bottom:1px dotted #611111;
+    font-family:楷体;
+}
+
+.con{ width:1024px; padding:20px; height:auto; margin:10px auto;}
+header{ width:1024px; height:auto; margin:auto;}
+.logo{ width:1010px; height:auto; margin:10px auto;}
+nav a button{border:0;
+    margin-top:5px;
+    width:120px;
+    height:35px;
+    font-size: 15px;
+    color:navajowhite;
+    border-radius: 50px;
+    margin-left: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 20%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 50%, rgba(0,0,0,0.40) 10%) #989898;
+    background-blend-mode: multiply,multiply;}
